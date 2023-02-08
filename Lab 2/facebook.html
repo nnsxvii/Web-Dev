@@ -1,136 +1,145 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset = "utf-8"/>
-        <meta name = "viewport" content = "width = device - width, initial - scale = 1.0" />
-        <title>Facebook Page</title>
-        <style>
-        *{
-            margin: 0;
-            padding: 0;
-            text-decoration: none;
-            outline: none;
-        }
-        
-        body{
-            width: 100%;
-            background-color: rgb(240, 240, 240);
-        }
-        
-        form{
-            background-color: rgb(255, 255, 255);
-            position: absolute;
-            width: 400px;
-            height: 300px;
-            padding: 10px 5px 20px 5px;
-            margin: -10vh 820px;
-            border-radius: 5px;
-            box-shadow: 5px 5px 6px -7px;
-        }
-        
-        input[type = 'text'], input[type = 'password']{
-            display: block;
-            background-color: white;
-            margin: auto;
-            border: 1.5px solid rgb(200, 200, 200);
-            width: 300px;
-            padding: 10px 40px;
-            border-radius: 5px;
-            text-align: auto;
-            color: black;
-            font-family: "Gill Sans", sans-serif;
-            font-size: 17px;
-        }
-        
-        button{
-            border: none;
-            background-color: rgb(42, 90, 249);
-            color:rgb(255, 255, 255);
-            margin: auto;
-            width: 383px;
-            display: block;
-            border-radius: 5px;
-            padding: 10px 0;
-            font-weight: bold;
-            font-family: "Gill Sans", sans-serif;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        
-        .f-psw{
-            display: block;
-            width: 200px;
-            margin: auto;
-            color: rgb(42, 90, 249);
-            padding-left: 80px;
-            font-family: "Gill Sans", sans-serif;
-            font-weight: 400;
-        }
-        
-        .line{
-            border-top: 1px solid black;
-            opacity: 0.2;
-        }
-        
-        .crtacc{
-            width: 200px;
-            font-size: 17px;
-            background-color: rgb(83, 193, 49);
-            text-align: center;
-        }
-        
-        .sub-link h3{
-            width: 270px;
-            position: relative;
-            color: black;
-            font-family: "Gill Sans", sans-serif;
-            padding: 130px 890px;
-            font-size: 13px;
-            text-align: center;
-            font-weight: 600;
-        }
-        
-        .sub-link h3 a{
-            color: black;
-            font-weight: bold;
-            font-style: 13px;
-        }
-        
-        .f-container{
-            width: 400px;
-            margin-left: 300px;
-            margin-top: 30vh;
-            font-family:'Segoe UI','San Francisco';
-        }
-        
-        .f-container img{
-            width: 250px;
-        }
-        
-        p{
-            font-style: 20px;
-            font-weight: 600;
-            word-spacing: 3px;
-        }
-        </style>
-   </head>
 
-   <body>
-    <form action = "">
-        <input type = "text" placeholder = "Электронный адрес или номер телефона"><br>
-        <input type = "password" placeholder = "Пароль"><br>
-        <button type = "submit">Вход</button><br>
-        <a href ="" class = "f-psw">Забыли пароль?</a> <br>
-        <div class = "line"></div><br>
-        <button class = "crtacc">Создать новый аккаунт</button>
-    </form>
+<head>
+  <meta charset = "utf-8" />
+  <meta name = "viewport" content = "width = device - width, initial - scale = 1.0" />
+  <title>Facebook</title>
+  <style>
+    body {
+        padding: 0;
+        margin: 0;
+        background: #f0f2f5;
+        font-family: Arial, sans-serif;
+    }   
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .title-box {
+        width: 500px;
+    }
+    .title-box img {
+        width: 235px;
+        margin-bottom: -10px;
+    }
+    .title-box p {
+        color: #000;
+        font-size: 26px;
+        font-weight: normal;
+        line-height: 32px;
+    }
+    .form-box {
+        width: 370px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 5px;
+        background: #fff;
+        margin-left: 60px;
+        box-shadow: 0px 2px 10px 1px rgba(71, 71, 71, 0.52);
+    }
+    .form-box input {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 15px;
+        font-size: 18px;
+        box-sizing: border-box;
+        border: 1px solid #eeebeb;
+        border-radius: 5px;
+        outline: none;
+    }
+    .form-box input:focus {
+        box-shadow: 0px 0px 1px 1px rgb(22, 111, 229);
+    }
+    .form-box button {
+        width: 100%;
+        margin-bottom: 15px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        padding: 13px 0;
+        cursor: pointer;
+        background: #166fe5;
+    }
+    .form-box button:hover {
+        background: #1877f2;
+    }
+    .form-box a {
+        color: #166fe5;
+        font-size: 14px;
+        text-decoration: none;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .form-box a:hover {
+        text-decoration: underline;
+    }
+    .form-box hr {
+        border: 1px solid #dadde1;
+        margin-bottom: 15px;
+    }
+    .form-box .create-btn a {
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 15px 20px;
+        border-radius: 5px;
+        background: #36a420;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    .form-box .create-btn a:hover {
+        background: #42b72a;
+    }
+    .sub-link h3{
+        width: 360px;
+        position: absolute;
+        color: black;
+        font-family: "Segoe UI", Arial;
+        padding-left: 590px;
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: -160px;
+        left: 17%;
+        text-align: center;
+    }
 
-    <div class = "f-container">
-        <img src = "https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt = "Facebook">
-        <p>Facebook помогает вам всегда оставаться на связи и общаться co своими знакомыми.</p>
+    .sub-link a{
+        color: black;
+        font-weight: bold;
+        font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+<div class = "box">
+    <div class = "title-box">
+      <img src = "https://i.postimg.cc/NMyj90t9/logo.png" alt = "Facebook">
+      <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
     </div>
-
-    <div class = "sub-link">
-        <h3><a href = "">Создать Cтраницу</a> знаменитости, музыкальной группы или компании.</h3>
+    <div class = "form-box">
+      <form action = "#">
+        <input type = "text" placeholder = "Электронный адрес или номер телефона">
+        <input type = "password" placeholder = "Пароль">
+        <button type = "submit">Вход</button>
+        <a href = "#">Забыли пароль?</a>
+      </form>
+      <hr>
+      <div class = "create-btn">
+        <a href = "" target = "_blank">Создать новый аккаунт</a>
+      </div>
     </div>
-   </body>
-</html>
+  </div>
+  <div class = "sub-link">
+    <h3><a href = "" style = "text-decoration: none">Создать Страницу</a> знаменитости, музыкальной группы или компании.</h3>
+    </div>
+      
+    
+</body>
